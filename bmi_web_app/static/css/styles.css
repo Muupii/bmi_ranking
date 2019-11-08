@@ -1,0 +1,79 @@
+/* bodyタグ内全体のフォントを設定 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* 中央寄せ的な */
+.container {
+    margin: auto;
+    text-align: center;
+}
+
+/* ロゴの画像を中央寄せ */
+.lab_logo {
+    text-align: center;
+}
+
+/* aタグが青くならないように、あと文字サイズを大きくする */
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* ボタン */
+.btn {
+    position: relative;
+    border-radius: 4px;
+    margin:0 auto;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 3px 0 rgb(126, 126, 126);
+    user-select: none;
+}
+
+.btn:hover {
+    top: -4px;
+    box-shadow: 0 7px 0 rgb(126, 126, 126);
+}
+
+.btn:active {
+    top: 3px;
+    box-shadow: none;
+}
+
+/* 領域の中央寄せ */
+.center_block {
+    max-width: 50%;
+    margin: auto;
+}
+
+/* formタグを左寄せ */
+form {
+    text-align: left;
+}
+
+#submit_bottun {
+    widows: 60px;
+    height: 30px;
+    font-size: large;
+}
+
+table {
+    margin: auto;
+    overflow: visible;
+    text-align: center;
+    width: 50%;
+}
+
+table th {
+    white-space: nowrap;
+    width: 0.1px;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+}
+

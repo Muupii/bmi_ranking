@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- Form
+  ================================================== -->
+
+<div class="container">
+
+  
+
+  <div class="center_block">
+
+    <form action="/confirm" method="POST">
+
+      <p class="title">Data Input</p>
+
+      <p>What's your name?<input type="text" placeholder="Hiroshi Abe" name="name"></p>
+  
+      <p>How tall are you?<input type="text" placeholder="189" name="height">cm</p>
+  
+      <p>How much is your weight?<input type="text" placeholder="75" name="weight">kg</p>
+  
+      <p>May I ask how old you are?<input type="text" placeholder="55" name="age">歳</p>
+  
+      <input id="submit_bottun" type="submit" value="Confirm Your Data!">
+  
+    </form>
+
+  </div>
+
+
+
+  <!-- widthだけ指定するとheightも勝手に指定される -->
+  <div class="lab_log"><img src="/static/img/abe.jpg" alt="abe" width="30%"></div>
+
+</div>
+
+{% endblock %}

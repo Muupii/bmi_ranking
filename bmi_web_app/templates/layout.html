@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>BMIデータベース</title>
+    {% endif %}
+    <link rel="stylesheet" href="/static/css/styles.css?{{time}}">
+  </head>
+  <body>
+    <div class="lab_logo">
+      <!-- ロゴ -->
+      <a href="/"><img src="/static/img/LabLogo_Color.png" alt="LabLogo" width="60%" height="60%"></a>
+    </div>
+    {% block content %}{% endblock %} 
+  </body>
+</html>

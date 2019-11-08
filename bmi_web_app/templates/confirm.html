@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- Form
+  ================================================== -->
+
+<div class="container">
+  <div class="center_block">
+
+    <form action="/input2db" method="POST">
+    
+      <p class="title">Your Input Data</p>
+    
+      <p>Your Name: {{name}}</p>
+  
+      <p>Your Height: {{height}}</p>
+  
+      <p>Your Weight: {{weight}}</p>
+  
+      <p>Your Age: {{age}}</p>
+
+      <input type="hidden" value="{{name}}" name="name">
+
+      <input type="hidden" value="{{height}}" name="height">
+
+      <input type="hidden" value="{{weight}}" name="weight">
+      
+      <input type="hidden" value="{{age}}" name="age">
+
+      <input id="submit_bottun" type="submit" value="Confirm!">
+
+      <button><a href="/input?name={{name}}&height=={{height}}&weight={{weight}}&age={{age}}">Back</a></button>
+
+      
+    
+    </form>
+
+  </div>
+
+  
+
+  
+
+</div>
+
+{% endblock %}

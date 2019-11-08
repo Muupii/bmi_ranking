@@ -1,0 +1,17 @@
+//データベース作成
+CREATE DATABASE bmi_db;
+
+//テーブル作成
+create table bmi_db.health_tb (id int auto_increment, name varchar(255), height float, weight float, age int, bmi float, PRIMARY KEY (id));
+
+//ユーザー作成
+create user bmi@localhost identified by 'bmi';
+
+//グローバルユーザー権限の設定
+grant ALL PRIVILEGES on *.* to bmi@localhost;
+
+//テーブルの削除
+drop table bmi_db.health_tb;
+
+//ユーザーの削除
+drop user bmi@localhost;
